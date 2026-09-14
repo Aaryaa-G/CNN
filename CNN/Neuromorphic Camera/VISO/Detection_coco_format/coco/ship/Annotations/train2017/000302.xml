@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+   <folder>Desktop</folder>
+   <filename>000302.jpg</filename>
+   <source>
+      <database>My Database</database>
+   </source>
+   <size>
+      <width>1345</width>
+      <height>451</height>
+      <depth>3</depth>
+   </size>
+   <segmented>0</segmented>
+   <object>
+      <name>person</name>
+      <pose>Unspecified</pose>
+      <truncated>0</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+         <xmin>754</xmin>
+         <ymin>124</ymin>
+         <xmax>778</xmax>
+         <ymax>134</ymax>
+      </bndbox>
+   </object>
+   <object>
+      <name>person</name>
+      <pose>Unspecified</pose>
+      <truncated>0</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+         <xmin>669</xmin>
+         <ymin>261</ymin>
+         <xmax>712</xmax>
+         <ymax>279</ymax>
+      </bndbox>
+   </object>
+   <object>
+      <name>person</name>
+      <pose>Unspecified</pose>
+      <truncated>0</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+         <xmin>1220</xmin>
+         <ymin>305</ymin>
+         <xmax>1256</xmax>
+         <ymax>328</ymax>
+      </bndbox>
+   </object>
+</annotation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+   <folder>G:/data_variant/original_part_coco/ship_crop/train/002/</folder>
+   <filename>000751.jpg</filename>
+   <path>G:/data_variant/original_part_coco/ship_crop/train/002/181.jpg</path>
+   <source>
+      <database>DVTV</database>
+      <annotation>NUDT</annotation>
+      <image>jilin01</image>
+      <flickrid>0</flickrid>
+   </source>
+   <size>
+      <width>512</width>
+      <height>512</height>
+      <depth>3</depth>
+   </size>
+   <segmented>0</segmented>
+   <object>
+      <name>person</name>
+      <pose>Unspecified</pose>
+      <truncated>0</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+         <xmin>180</xmin>
+         <ymin>171</ymin>
+         <xmax>194</xmax>
+         <ymax>186</ymax>
+      </bndbox>
+   </object>
+</annotation>
