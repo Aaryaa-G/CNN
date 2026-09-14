@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
+.claude/
 
 # Generated event-dataset build outputs (regenerate with build_dataset.py / build_voxel_grid.py)
 CNN/event_maritime/built_dvs/

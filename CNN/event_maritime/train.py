@@ -68,6 +68,7 @@ def main():
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--width", type=int, default=64)
     parser.add_argument("--depth", type=int, default=6)
+    parser.add_argument("--grad-clip", type=float, default=10.0, help="max gradient norm (0 disables)")
     parser.add_argument("--score-thresh", type=float, default=0.3)
     parser.add_argument("--iou-thresh", type=float, default=0.3)
     parser.add_argument("--resume", default=None, help="path to a checkpoint to resume from")
@@ -125,6 +126,9 @@ def main():
                 loss, parts = centernet_loss(pred_hm, pred_wh, pred_off, gt_hm, gt_wh, gt_off, mask)
 
             scaler.scale(loss).backward()
+            if args.grad_clip > 0:
+                scaler.unscale_(optimizer)
+                torch.nn.utils.clip_grad_norm_(model.parameters(), args.grad_clip)
             scaler.step(optimizer)
             scaler.update()
 

@@ -4,7 +4,11 @@ import torch
 
 
 def focal_loss(pred, target, alpha=2.0, beta=4.0):
-    pred = pred.clamp(1e-6, 1 - 1e-6)
+    # Cast to float32 before clamping: under AMP, pred arrives as float16,
+    # which can't represent 1 - 1e-6 distinctly from 1.0, so the clamp's
+    # upper bound silently becomes 1.0 and log(1 - pred) below produces -inf.
+    pred = pred.float().clamp(1e-6, 1 - 1e-6)
+    target = target.float()
     pos_mask = (target == 1).float()
     neg_mask = (target < 1).float()
     neg_weight = torch.pow(1 - target, beta)
