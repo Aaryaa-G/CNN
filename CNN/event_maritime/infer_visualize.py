@@ -17,11 +17,15 @@ from model import CenterNetLite
 from centernet_utils import decode_boxes
 
 
-def event_frame_to_rgb(grid):
+def event_frame_to_rgb(grid, gamma=0.45):
+    """gamma < 1 boosts dim pixels for human visibility (display only, same
+    reasoning as track_sequence.py's event_frame_to_rgb)."""
     off, on = grid[0], grid[1]
+    off_disp = np.power(np.clip(off, 0, 1), gamma)
+    on_disp = np.power(np.clip(on, 0, 1), gamma)
     rgb = np.zeros((*off.shape, 3), dtype=np.uint8)
-    rgb[..., 0] = (off * 255).clip(0, 255).astype(np.uint8)  # OFF -> red
-    rgb[..., 2] = (on * 255).clip(0, 255).astype(np.uint8)   # ON -> blue
+    rgb[..., 0] = (off_disp * 255).astype(np.uint8)  # OFF -> red
+    rgb[..., 2] = (on_disp * 255).astype(np.uint8)   # ON -> blue
     return Image.fromarray(rgb)
 
 
@@ -33,6 +37,8 @@ def main():
     parser.add_argument("--out-dir", default="preview")
     parser.add_argument("--device", default="cpu")
     parser.add_argument("--score-thresh", type=float, default=0.3)
+    parser.add_argument("--gamma", type=float, default=0.45,
+                         help="<1 brightens dim event pixels for visibility (display only)")
     args = parser.parse_args()
 
     os.makedirs(args.out_dir, exist_ok=True)
@@ -54,7 +60,7 @@ def main():
             heatmap, wh, offset = model(image)
             preds = decode_boxes(heatmap[0], wh[0], offset[0], STRIDE, score_thresh=args.score_thresh)
 
-            img = event_frame_to_rgb(sample["image"].numpy())
+            img = event_frame_to_rgb(sample["image"].numpy(), gamma=args.gamma)
             draw = ImageDraw.Draw(img)
             for x1, y1, x2, y2 in sample["boxes"]:
                 draw.rectangle([x1, y1, x2, y2], outline=(0, 255, 0), width=2)

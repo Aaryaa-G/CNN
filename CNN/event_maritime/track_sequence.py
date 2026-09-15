@@ -23,11 +23,18 @@ from eval_utils import box_iou
 from dataset import STRIDE
 
 
-def event_frame_to_rgb(grid):
+def event_frame_to_rgb(grid, gamma=0.45):
+    """gamma < 1 boosts dim pixels for human visibility -- normalize_channel()
+    scales each frame by its own max, so with DVS-Voltmeter's heavy dark-current
+    noise most real ship-edge pixels are small fractions of that max and render
+    almost black under a linear 0-255 mapping. Display-only; doesn't touch the
+    underlying data used for training."""
     off, on = grid[0], grid[1]
+    off_disp = np.power(np.clip(off, 0, 1), gamma)
+    on_disp = np.power(np.clip(on, 0, 1), gamma)
     rgb = np.zeros((*off.shape, 3), dtype=np.uint8)
-    rgb[..., 2] = (off * 255).clip(0, 255).astype(np.uint8)  # OFF -> red (BGR: R at idx 2)
-    rgb[..., 0] = (on * 255).clip(0, 255).astype(np.uint8)   # ON -> blue (BGR: B at idx 0)
+    rgb[..., 2] = (off_disp * 255).astype(np.uint8)  # OFF -> red (BGR: R at idx 2)
+    rgb[..., 0] = (on_disp * 255).astype(np.uint8)   # ON -> blue (BGR: B at idx 0)
     return rgb
 
 
@@ -105,6 +112,8 @@ def main():
     parser.add_argument("--device", default="cpu")
     parser.add_argument("--score-thresh", type=float, default=0.3)
     parser.add_argument("--fps", type=float, default=10.0)
+    parser.add_argument("--gamma", type=float, default=0.45,
+                         help="<1 brightens dim event pixels for visibility (display only)")
     args = parser.parse_args()
 
     device = torch.device(args.device)
@@ -134,7 +143,7 @@ def main():
 
             tracks = tracker.step(preds)
 
-            canvas = event_frame_to_rgb(frame)
+            canvas = event_frame_to_rgb(frame, gamma=args.gamma)
             for tid, t in tracks.items():
                 color = TRACK_COLORS[tid % len(TRACK_COLORS)]
                 trail = t["trail"][-20:]
