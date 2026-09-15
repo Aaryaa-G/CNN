@@ -104,10 +104,15 @@ simple tracker to follow ships across frames.
 #    simple frame-diff, but still doesn't need a GPU for this step)
 python build_dataset.py --viso-root "../Neuromorphic Camera/VISO" --out-dir built_dvs --fps 30
 
-# 2. Train on your GPU machine
+# 2. Train on your GPU machine. --vflip/--rotate-deg/--gain-jitter/--gamma-jitter
+#    were chosen by the sweep in sweep.sh (see RESULTS.md) -- rotation and
+#    vertical flip alone each help substantially on this small dataset;
+#    combined ("full_aug") is the best config found, +51% relative
+#    mean_best_iou over no extra augmentation.
 python train.py --data-dir built_dvs --out-dir checkpoints \
     --epochs 150 --batch-size 16 --device cuda --amp --workers 4 \
-    --width 96 --depth 8
+    --width 96 --depth 8 \
+    --vflip --rotate-deg 10 --gain-jitter 0.15 --gamma-jitter 0.15
 
 # 3. Visualize predictions on a handful of frames
 python infer_visualize.py --data-dir built_dvs --checkpoint checkpoints/best.pt \
