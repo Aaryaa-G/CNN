@@ -1,0 +1,317 @@
+Device: cuda, AMP: True
+Train samples: 525, val samples: 93
+Epoch 0: loss=133.3470 (hm=130.9373 wh=16.4887 off=0.7608) [33 batches, 10.7s]
+  val: mean_best_iou=0.0000 precision=0.0000 recall=0.0000 (n_gt=166)
+  -> new best (mean_best_iou=0.0000), saved sweep/rotate/best.pt
+Epoch 1: loss=3.1814 (hm=1.9999 wh=8.7924 off=0.3023) [33 batches, 16.3s]
+  val: mean_best_iou=0.0128 precision=0.7500 recall=0.0181 (n_gt=166)
+  -> new best (mean_best_iou=0.0128), saved sweep/rotate/best.pt
+Epoch 2: loss=2.6337 (hm=1.7083 wh=6.4840 off=0.2770) [33 batches, 20.0s]
+  val: mean_best_iou=0.1014 precision=0.8333 recall=0.1807 (n_gt=166)
+  -> new best (mean_best_iou=0.1014), saved sweep/rotate/best.pt
+Epoch 3: loss=2.0922 (hm=1.3197 wh=5.2251 off=0.2500) [33 batches, 20.2s]
+  val: mean_best_iou=0.0417 precision=1.0000 recall=0.0663 (n_gt=166)
+Epoch 4: loss=1.9702 (hm=1.2673 wh=4.7967 off=0.2233) [33 batches, 20.3s]
+  val: mean_best_iou=0.0517 precision=1.0000 recall=0.0904 (n_gt=166)
+Epoch 5: loss=1.6969 (hm=1.0478 wh=4.0826 off=0.2408) [33 batches, 19.9s]
+  val: mean_best_iou=0.0268 precision=1.0000 recall=0.0422 (n_gt=166)
+Epoch 6: loss=1.6846 (hm=1.0439 wh=4.3636 off=0.2044) [33 batches, 19.8s]
+  val: mean_best_iou=0.1460 precision=1.0000 recall=0.2169 (n_gt=166)
+  -> new best (mean_best_iou=0.1460), saved sweep/rotate/best.pt
+Epoch 7: loss=1.5226 (hm=0.9433 wh=3.7596 off=0.2033) [33 batches, 20.6s]
+  val: mean_best_iou=0.1637 precision=0.9375 recall=0.2711 (n_gt=166)
+  -> new best (mean_best_iou=0.1637), saved sweep/rotate/best.pt
+Epoch 8: loss=1.4917 (hm=0.8917 wh=3.9330 off=0.2067) [33 batches, 20.5s]
+  val: mean_best_iou=0.0297 precision=1.0000 recall=0.0422 (n_gt=166)
+Epoch 9: loss=1.3198 (hm=0.8038 wh=3.2744 off=0.1886) [33 batches, 20.1s]
+  val: mean_best_iou=0.2296 precision=1.0000 recall=0.3554 (n_gt=166)
+  -> new best (mean_best_iou=0.2296), saved sweep/rotate/best.pt
+Epoch 10: loss=1.2424 (hm=0.7479 wh=3.0756 off=0.1869) [33 batches, 19.3s]
+  val: mean_best_iou=0.1922 precision=1.0000 recall=0.2831 (n_gt=166)
+Epoch 11: loss=1.2959 (hm=0.8020 wh=3.0813 off=0.1858) [33 batches, 20.4s]
+  val: mean_best_iou=0.0347 precision=1.0000 recall=0.0542 (n_gt=166)
+Epoch 12: loss=1.1549 (hm=0.6944 wh=2.8714 off=0.1734) [33 batches, 19.9s]
+  val: mean_best_iou=0.3226 precision=0.9022 recall=0.5000 (n_gt=166)
+  -> new best (mean_best_iou=0.3226), saved sweep/rotate/best.pt
+Epoch 13: loss=1.1892 (hm=0.6941 wh=3.0943 off=0.1856) [33 batches, 20.0s]
+  val: mean_best_iou=0.3852 precision=0.9894 recall=0.5602 (n_gt=166)
+  -> new best (mean_best_iou=0.3852), saved sweep/rotate/best.pt
+Epoch 14: loss=1.1099 (hm=0.6506 wh=2.8100 off=0.1783) [33 batches, 20.0s]
+  val: mean_best_iou=0.3790 precision=0.9892 recall=0.5542 (n_gt=166)
+Epoch 15: loss=1.0284 (hm=0.6117 wh=2.4199 off=0.1747) [33 batches, 19.9s]
+  val: mean_best_iou=0.4661 precision=0.9917 recall=0.7229 (n_gt=166)
+  -> new best (mean_best_iou=0.4661), saved sweep/rotate/best.pt
+Epoch 16: loss=0.9667 (hm=0.5553 wh=2.4011 off=0.1713) [33 batches, 19.8s]
+  val: mean_best_iou=0.3964 precision=0.9789 recall=0.5602 (n_gt=166)
+Epoch 17: loss=0.9835 (hm=0.5823 wh=2.3018 off=0.1710) [33 batches, 20.3s]
+  val: mean_best_iou=0.3561 precision=0.9889 recall=0.5361 (n_gt=166)
+Epoch 18: loss=0.9627 (hm=0.5515 wh=2.2366 off=0.1875) [33 batches, 19.9s]
+  val: mean_best_iou=0.4529 precision=0.9820 recall=0.6566 (n_gt=166)
+Epoch 19: loss=0.9407 (hm=0.5419 wh=2.3712 off=0.1617) [33 batches, 20.1s]
+  val: mean_best_iou=0.4158 precision=0.9811 recall=0.6265 (n_gt=166)
+Epoch 20: loss=0.9102 (hm=0.5186 wh=2.3131 off=0.1603) [33 batches, 20.2s]
+  val: mean_best_iou=0.3453 precision=0.9765 recall=0.5000 (n_gt=166)
+Epoch 21: loss=0.8618 (hm=0.4757 wh=2.2101 off=0.1651) [33 batches, 19.8s]
+  val: mean_best_iou=0.3577 precision=0.9677 recall=0.5422 (n_gt=166)
+Epoch 22: loss=0.8866 (hm=0.5005 wh=2.2186 off=0.1643) [33 batches, 19.8s]
+  val: mean_best_iou=0.1594 precision=0.9756 recall=0.2410 (n_gt=166)
+Epoch 23: loss=0.8506 (hm=0.4770 wh=2.1353 off=0.1600) [33 batches, 19.9s]
+  val: mean_best_iou=0.4843 precision=0.9580 recall=0.6867 (n_gt=166)
+  -> new best (mean_best_iou=0.4843), saved sweep/rotate/best.pt
+Epoch 24: loss=0.8312 (hm=0.4557 wh=2.1475 off=0.1608) [33 batches, 20.2s]
+  val: mean_best_iou=0.5128 precision=0.9338 recall=0.7651 (n_gt=166)
+  -> new best (mean_best_iou=0.5128), saved sweep/rotate/best.pt
+Epoch 25: loss=0.8825 (hm=0.5023 wh=2.1505 off=0.1652) [33 batches, 20.0s]
+  val: mean_best_iou=0.5108 precision=0.9839 recall=0.7349 (n_gt=166)
+Epoch 26: loss=0.7930 (hm=0.4429 wh=1.9453 off=0.1555) [33 batches, 19.7s]
+  val: mean_best_iou=0.5943 precision=0.8961 recall=0.8313 (n_gt=166)
+  -> new best (mean_best_iou=0.5943), saved sweep/rotate/best.pt
+Epoch 27: loss=0.7809 (hm=0.4211 wh=2.0696 off=0.1528) [33 batches, 20.1s]
+  val: mean_best_iou=0.4914 precision=0.9421 recall=0.6867 (n_gt=166)
+Epoch 28: loss=0.7957 (hm=0.4403 wh=1.9866 off=0.1568) [33 batches, 20.1s]
+  val: mean_best_iou=0.4319 precision=0.9904 recall=0.6205 (n_gt=166)
+Epoch 29: loss=0.8020 (hm=0.4401 wh=2.0391 off=0.1579) [33 batches, 20.2s]
+  val: mean_best_iou=0.2357 precision=1.0000 recall=0.3373 (n_gt=166)
+Epoch 30: loss=0.7589 (hm=0.4101 wh=1.9791 off=0.1509) [33 batches, 20.1s]
+  val: mean_best_iou=0.4833 precision=0.9820 recall=0.6566 (n_gt=166)
+Epoch 31: loss=0.7872 (hm=0.4286 wh=2.0752 off=0.1511) [33 batches, 19.9s]
+  val: mean_best_iou=0.6074 precision=0.8294 recall=0.8494 (n_gt=166)
+  -> new best (mean_best_iou=0.6074), saved sweep/rotate/best.pt
+Epoch 32: loss=0.7599 (hm=0.4098 wh=2.0058 off=0.1495) [33 batches, 19.7s]
+  val: mean_best_iou=0.5337 precision=0.9766 recall=0.7530 (n_gt=166)
+Epoch 33: loss=0.7458 (hm=0.4088 wh=1.8883 off=0.1482) [33 batches, 19.9s]
+  val: mean_best_iou=0.5699 precision=0.9562 recall=0.7892 (n_gt=166)
+Epoch 34: loss=0.7740 (hm=0.4300 wh=1.9837 off=0.1457) [33 batches, 20.1s]
+  val: mean_best_iou=0.5433 precision=0.9398 recall=0.7530 (n_gt=166)
+Epoch 35: loss=0.7238 (hm=0.3820 wh=1.9465 off=0.1472) [33 batches, 20.0s]
+  val: mean_best_iou=0.3137 precision=0.9861 recall=0.4277 (n_gt=166)
+Epoch 36: loss=0.7004 (hm=0.3552 wh=1.8518 off=0.1601) [33 batches, 19.9s]
+  val: mean_best_iou=0.5458 precision=0.9692 recall=0.7590 (n_gt=166)
+Epoch 37: loss=0.7161 (hm=0.3689 wh=1.9788 off=0.1493) [33 batches, 19.9s]
+  val: mean_best_iou=0.6314 precision=0.9367 recall=0.8916 (n_gt=166)
+  -> new best (mean_best_iou=0.6314), saved sweep/rotate/best.pt
+Epoch 38: loss=0.6887 (hm=0.3463 wh=1.9053 off=0.1519) [33 batches, 19.8s]
+  val: mean_best_iou=0.4130 precision=0.9897 recall=0.5783 (n_gt=166)
+Epoch 39: loss=0.6799 (hm=0.3414 wh=1.8368 off=0.1549) [33 batches, 19.8s]
+  val: mean_best_iou=0.5196 precision=0.9831 recall=0.6988 (n_gt=166)
+Epoch 40: loss=0.6811 (hm=0.3445 wh=1.8811 off=0.1486) [33 batches, 19.9s]
+  val: mean_best_iou=0.5703 precision=0.9559 recall=0.7831 (n_gt=166)
+Epoch 41: loss=0.6713 (hm=0.3440 wh=1.8576 off=0.1416) [33 batches, 19.8s]
+  val: mean_best_iou=0.5371 precision=0.9308 recall=0.7289 (n_gt=166)
+Epoch 42: loss=0.6913 (hm=0.3538 wh=1.9224 off=0.1453) [33 batches, 20.2s]
+  val: mean_best_iou=0.5577 precision=0.9845 recall=0.7651 (n_gt=166)
+Epoch 43: loss=0.6547 (hm=0.3279 wh=1.8170 off=0.1451) [33 batches, 20.2s]
+  val: mean_best_iou=0.4984 precision=0.9664 recall=0.6928 (n_gt=166)
+Epoch 44: loss=0.6177 (hm=0.2871 wh=1.8546 off=0.1451) [33 batches, 20.0s]
+  val: mean_best_iou=0.6038 precision=0.9091 recall=0.8434 (n_gt=166)
+Epoch 45: loss=0.7000 (hm=0.3638 wh=1.9489 off=0.1413) [33 batches, 19.9s]
+  val: mean_best_iou=0.4643 precision=0.9732 recall=0.6566 (n_gt=166)
+Epoch 46: loss=0.6656 (hm=0.3375 wh=1.8869 off=0.1395) [33 batches, 20.1s]
+  val: mean_best_iou=0.5827 precision=0.9630 recall=0.7831 (n_gt=166)
+Epoch 47: loss=0.6360 (hm=0.3114 wh=1.8294 off=0.1417) [33 batches, 14.4s]
+  val: mean_best_iou=0.4939 precision=0.9826 recall=0.6807 (n_gt=166)
+Epoch 48: loss=0.5980 (hm=0.2875 wh=1.7302 off=0.1375) [33 batches, 14.3s]
+  val: mean_best_iou=0.5364 precision=0.9918 recall=0.7289 (n_gt=166)
+Epoch 49: loss=0.6188 (hm=0.3050 wh=1.7192 off=0.1420) [33 batches, 13.3s]
+  val: mean_best_iou=0.4772 precision=1.0000 recall=0.6446 (n_gt=166)
+Epoch 50: loss=0.6436 (hm=0.3128 wh=1.8780 off=0.1430) [33 batches, 11.1s]
+  val: mean_best_iou=0.5531 precision=0.9769 recall=0.7651 (n_gt=166)
+Epoch 51: loss=0.6307 (hm=0.3170 wh=1.7426 off=0.1395) [33 batches, 11.0s]
+  val: mean_best_iou=0.5015 precision=0.9516 recall=0.7108 (n_gt=166)
+Epoch 52: loss=0.6087 (hm=0.2936 wh=1.7487 off=0.1403) [33 batches, 11.1s]
+  val: mean_best_iou=0.5957 precision=0.9580 recall=0.8253 (n_gt=166)
+Epoch 53: loss=0.6123 (hm=0.2881 wh=1.8534 off=0.1389) [33 batches, 12.1s]
+  val: mean_best_iou=0.5927 precision=0.9710 recall=0.8072 (n_gt=166)
+Epoch 54: loss=0.5677 (hm=0.2605 wh=1.7285 off=0.1344) [33 batches, 20.0s]
+  val: mean_best_iou=0.5574 precision=0.9844 recall=0.7590 (n_gt=166)
+Epoch 55: loss=0.5609 (hm=0.2580 wh=1.6616 off=0.1368) [33 batches, 19.7s]
+  val: mean_best_iou=0.5404 precision=0.9762 recall=0.7410 (n_gt=166)
+Epoch 56: loss=0.5869 (hm=0.2827 wh=1.6354 off=0.1406) [33 batches, 20.0s]
+  val: mean_best_iou=0.5645 precision=0.9424 recall=0.7892 (n_gt=166)
+Epoch 57: loss=0.5624 (hm=0.2664 wh=1.6023 off=0.1358) [33 batches, 20.2s]
+  val: mean_best_iou=0.4299 precision=0.9615 recall=0.6024 (n_gt=166)
+Epoch 58: loss=0.5574 (hm=0.2609 wh=1.6432 off=0.1321) [33 batches, 19.9s]
+  val: mean_best_iou=0.6006 precision=0.9257 recall=0.8253 (n_gt=166)
+Epoch 59: loss=0.5443 (hm=0.2484 wh=1.6329 off=0.1326) [33 batches, 20.1s]
+  val: mean_best_iou=0.5063 precision=0.9752 recall=0.7108 (n_gt=166)
+Epoch 60: loss=0.5624 (hm=0.2589 wh=1.6965 off=0.1338) [33 batches, 20.0s]
+  val: mean_best_iou=0.4535 precision=1.0000 recall=0.6145 (n_gt=166)
+Epoch 61: loss=0.5569 (hm=0.2691 wh=1.5991 off=0.1279) [33 batches, 20.1s]
+  val: mean_best_iou=0.4949 precision=0.9206 recall=0.6988 (n_gt=166)
+Epoch 62: loss=0.5645 (hm=0.2603 wh=1.6904 off=0.1351) [33 batches, 19.8s]
+  val: mean_best_iou=0.5711 precision=0.9776 recall=0.7892 (n_gt=166)
+Epoch 63: loss=0.5504 (hm=0.2493 wh=1.7174 off=0.1294) [33 batches, 19.9s]
+  val: mean_best_iou=0.5741 precision=0.9701 recall=0.7831 (n_gt=166)
+Epoch 64: loss=0.5530 (hm=0.2512 wh=1.6447 off=0.1373) [33 batches, 20.3s]
+  val: mean_best_iou=0.3375 precision=0.9186 recall=0.4759 (n_gt=166)
+Epoch 65: loss=0.4986 (hm=0.2100 wh=1.6050 off=0.1282) [33 batches, 19.8s]
+  val: mean_best_iou=0.5846 precision=0.9568 recall=0.8012 (n_gt=166)
+Epoch 66: loss=0.5379 (hm=0.2397 wh=1.6885 off=0.1293) [33 batches, 19.8s]
+  val: mean_best_iou=0.4989 precision=0.9739 recall=0.6747 (n_gt=166)
+Epoch 67: loss=0.5343 (hm=0.2498 wh=1.5740 off=0.1270) [33 batches, 19.9s]
+  val: mean_best_iou=0.5218 precision=0.9528 recall=0.7289 (n_gt=166)
+Epoch 68: loss=0.5098 (hm=0.2166 wh=1.6638 off=0.1267) [33 batches, 19.9s]
+  val: mean_best_iou=0.4985 precision=0.9826 recall=0.6807 (n_gt=166)
+Epoch 69: loss=0.4876 (hm=0.2081 wh=1.5625 off=0.1233) [33 batches, 19.9s]
+  val: mean_best_iou=0.5425 precision=0.9538 recall=0.7470 (n_gt=166)
+Epoch 70: loss=0.5148 (hm=0.2313 wh=1.5646 off=0.1270) [33 batches, 19.8s]
+  val: mean_best_iou=0.5716 precision=0.9635 recall=0.7952 (n_gt=166)
+Epoch 71: loss=0.5078 (hm=0.2182 wh=1.5824 off=0.1314) [33 batches, 19.7s]
+  val: mean_best_iou=0.5732 precision=0.9496 recall=0.7952 (n_gt=166)
+Epoch 72: loss=0.4910 (hm=0.2200 wh=1.4600 off=0.1251) [33 batches, 20.1s]
+  val: mean_best_iou=0.4450 precision=0.9450 recall=0.6205 (n_gt=166)
+Epoch 73: loss=0.5134 (hm=0.2324 wh=1.5869 off=0.1223) [33 batches, 20.1s]
+  val: mean_best_iou=0.5812 precision=0.9379 recall=0.8193 (n_gt=166)
+Epoch 74: loss=0.4956 (hm=0.2211 wh=1.5547 off=0.1190) [33 batches, 19.7s]
+  val: mean_best_iou=0.6111 precision=0.9400 recall=0.8494 (n_gt=166)
+Epoch 75: loss=0.4943 (hm=0.2190 wh=1.5343 off=0.1219) [33 batches, 20.1s]
+  val: mean_best_iou=0.5179 precision=0.9833 recall=0.7108 (n_gt=166)
+Epoch 76: loss=0.4958 (hm=0.2268 wh=1.4957 off=0.1193) [33 batches, 19.6s]
+  val: mean_best_iou=0.5574 precision=0.9771 recall=0.7711 (n_gt=166)
+Epoch 77: loss=0.4827 (hm=0.2113 wh=1.4927 off=0.1222) [33 batches, 20.0s]
+  val: mean_best_iou=0.4418 precision=0.9905 recall=0.6265 (n_gt=166)
+Epoch 78: loss=0.4752 (hm=0.2104 wh=1.4360 off=0.1213) [33 batches, 19.7s]
+  val: mean_best_iou=0.5667 precision=0.9924 recall=0.7831 (n_gt=166)
+Epoch 79: loss=0.4928 (hm=0.2240 wh=1.4730 off=0.1214) [33 batches, 20.1s]
+  val: mean_best_iou=0.5932 precision=0.9779 recall=0.8012 (n_gt=166)
+Epoch 80: loss=0.4864 (hm=0.2137 wh=1.5057 off=0.1221) [33 batches, 20.0s]
+  val: mean_best_iou=0.5678 precision=0.9496 recall=0.7952 (n_gt=166)
+Epoch 81: loss=0.4652 (hm=0.1934 wh=1.5170 off=0.1201) [33 batches, 19.8s]
+  val: mean_best_iou=0.5489 precision=0.9615 recall=0.7530 (n_gt=166)
+Epoch 82: loss=0.4533 (hm=0.1899 wh=1.4426 off=0.1191) [33 batches, 19.8s]
+  val: mean_best_iou=0.6022 precision=0.9514 recall=0.8253 (n_gt=166)
+Epoch 83: loss=0.4640 (hm=0.1949 wh=1.5325 off=0.1159) [33 batches, 20.1s]
+  val: mean_best_iou=0.5395 precision=0.9840 recall=0.7410 (n_gt=166)
+Epoch 84: loss=0.4454 (hm=0.1821 wh=1.4662 off=0.1166) [33 batches, 20.1s]
+  val: mean_best_iou=0.4752 precision=0.9907 recall=0.6446 (n_gt=166)
+Epoch 85: loss=0.4683 (hm=0.1909 wh=1.4636 off=0.1310) [33 batches, 20.2s]
+  val: mean_best_iou=0.5007 precision=0.9658 recall=0.6807 (n_gt=166)
+Epoch 86: loss=0.4482 (hm=0.1860 wh=1.4616 off=0.1160) [33 batches, 20.4s]
+  val: mean_best_iou=0.5030 precision=0.9752 recall=0.7108 (n_gt=166)
+Epoch 87: loss=0.4403 (hm=0.1862 wh=1.4060 off=0.1135) [33 batches, 19.8s]
+  val: mean_best_iou=0.5247 precision=0.9375 recall=0.7229 (n_gt=166)
+Epoch 88: loss=0.4701 (hm=0.2069 wh=1.4640 off=0.1168) [33 batches, 19.9s]
+  val: mean_best_iou=0.5884 precision=0.9781 recall=0.8072 (n_gt=166)
+Epoch 89: loss=0.4389 (hm=0.1883 wh=1.3779 off=0.1128) [33 batches, 20.4s]
+  val: mean_best_iou=0.5969 precision=0.9178 recall=0.8072 (n_gt=166)
+Epoch 90: loss=0.4269 (hm=0.1745 wh=1.3988 off=0.1125) [33 batches, 20.1s]
+  val: mean_best_iou=0.5400 precision=0.9919 recall=0.7410 (n_gt=166)
+Epoch 91: loss=0.4438 (hm=0.1859 wh=1.4283 off=0.1151) [33 batches, 20.3s]
+  val: mean_best_iou=0.5877 precision=0.9778 recall=0.7952 (n_gt=166)
+Epoch 92: loss=0.4315 (hm=0.1763 wh=1.4147 off=0.1137) [33 batches, 20.0s]
+  val: mean_best_iou=0.5229 precision=1.0000 recall=0.7048 (n_gt=166)
+Epoch 93: loss=0.4363 (hm=0.1866 wh=1.3693 off=0.1127) [33 batches, 20.1s]
+  val: mean_best_iou=0.6470 precision=0.9371 recall=0.8976 (n_gt=166)
+  -> new best (mean_best_iou=0.6470), saved sweep/rotate/best.pt
+Epoch 94: loss=0.4117 (hm=0.1623 wh=1.3664 off=0.1127) [33 batches, 19.8s]
+  val: mean_best_iou=0.5699 precision=0.9921 recall=0.7590 (n_gt=166)
+Epoch 95: loss=0.4043 (hm=0.1689 wh=1.2728 off=0.1081) [33 batches, 20.2s]
+  val: mean_best_iou=0.5403 precision=0.9919 recall=0.7410 (n_gt=166)
+Epoch 96: loss=0.4080 (hm=0.1644 wh=1.3752 off=0.1061) [33 batches, 19.9s]
+  val: mean_best_iou=0.6025 precision=0.9645 recall=0.8193 (n_gt=166)
+Epoch 97: loss=0.4135 (hm=0.1627 wh=1.3983 off=0.1110) [33 batches, 20.0s]
+  val: mean_best_iou=0.5592 precision=0.9766 recall=0.7530 (n_gt=166)
+Epoch 98: loss=0.4000 (hm=0.1565 wh=1.3498 off=0.1085) [33 batches, 20.2s]
+  val: mean_best_iou=0.5464 precision=1.0000 recall=0.7590 (n_gt=166)
+Epoch 99: loss=0.4083 (hm=0.1702 wh=1.3213 off=0.1060) [33 batches, 16.4s]
+  val: mean_best_iou=0.4889 precision=1.0000 recall=0.6687 (n_gt=166)
+Epoch 100: loss=0.3979 (hm=0.1540 wh=1.3459 off=0.1093) [33 batches, 14.5s]
+  val: mean_best_iou=0.5499 precision=0.9844 recall=0.7590 (n_gt=166)
+Epoch 101: loss=0.3787 (hm=0.1460 wh=1.3134 off=0.1013) [33 batches, 14.4s]
+  val: mean_best_iou=0.5475 precision=0.9921 recall=0.7530 (n_gt=166)
+Epoch 102: loss=0.4019 (hm=0.1686 wh=1.3398 off=0.0993) [33 batches, 11.4s]
+  val: mean_best_iou=0.5374 precision=0.9843 recall=0.7530 (n_gt=166)
+Epoch 103: loss=0.3738 (hm=0.1426 wh=1.2593 off=0.1053) [33 batches, 11.4s]
+  val: mean_best_iou=0.5060 precision=0.9916 recall=0.7108 (n_gt=166)
+Epoch 104: loss=0.3681 (hm=0.1417 wh=1.2416 off=0.1022) [33 batches, 11.2s]
+  val: mean_best_iou=0.5850 precision=0.9706 recall=0.7952 (n_gt=166)
+Epoch 105: loss=0.3790 (hm=0.1476 wh=1.2962 off=0.1017) [33 batches, 14.4s]
+  val: mean_best_iou=0.5848 precision=0.9716 recall=0.8253 (n_gt=166)
+Epoch 106: loss=0.3597 (hm=0.1348 wh=1.2474 off=0.1002) [33 batches, 19.9s]
+  val: mean_best_iou=0.5443 precision=1.0000 recall=0.7530 (n_gt=166)
+Epoch 107: loss=0.3662 (hm=0.1435 wh=1.2314 off=0.0995) [33 batches, 19.9s]
+  val: mean_best_iou=0.5832 precision=0.9643 recall=0.8133 (n_gt=166)
+Epoch 108: loss=0.3442 (hm=0.1213 wh=1.2320 off=0.0997) [33 batches, 20.0s]
+  val: mean_best_iou=0.5406 precision=0.9843 recall=0.7530 (n_gt=166)
+Epoch 109: loss=0.3731 (hm=0.1492 wh=1.2622 off=0.0976) [33 batches, 19.8s]
+  val: mean_best_iou=0.5846 precision=0.9710 recall=0.8072 (n_gt=166)
+Epoch 110: loss=0.3681 (hm=0.1414 wh=1.2640 off=0.1003) [33 batches, 19.8s]
+  val: mean_best_iou=0.5565 precision=0.9624 recall=0.7711 (n_gt=166)
+Epoch 111: loss=0.3508 (hm=0.1306 wh=1.2394 off=0.0963) [33 batches, 19.8s]
+  val: mean_best_iou=0.5550 precision=0.9846 recall=0.7711 (n_gt=166)
+Epoch 112: loss=0.3695 (hm=0.1506 wh=1.2139 off=0.0975) [33 batches, 20.2s]
+  val: mean_best_iou=0.5667 precision=0.9562 recall=0.7892 (n_gt=166)
+Epoch 113: loss=0.3875 (hm=0.1627 wh=1.2723 off=0.0975) [33 batches, 20.3s]
+  val: mean_best_iou=0.5851 precision=0.9574 recall=0.8133 (n_gt=166)
+Epoch 114: loss=0.3521 (hm=0.1396 wh=1.1930 off=0.0932) [33 batches, 19.7s]
+  val: mean_best_iou=0.5309 precision=0.9918 recall=0.7289 (n_gt=166)
+Epoch 115: loss=0.3652 (hm=0.1482 wh=1.2123 off=0.0959) [33 batches, 20.2s]
+  val: mean_best_iou=0.5545 precision=0.9922 recall=0.7651 (n_gt=166)
+Epoch 116: loss=0.3492 (hm=0.1390 wh=1.2025 off=0.0899) [33 batches, 19.9s]
+  val: mean_best_iou=0.5761 precision=0.9704 recall=0.7892 (n_gt=166)
+Epoch 117: loss=0.3552 (hm=0.1424 wh=1.2015 off=0.0926) [33 batches, 19.8s]
+  val: mean_best_iou=0.5534 precision=0.9844 recall=0.7590 (n_gt=166)
+Epoch 118: loss=0.3492 (hm=0.1320 wh=1.1895 off=0.0983) [33 batches, 19.7s]
+  val: mean_best_iou=0.5647 precision=0.9776 recall=0.7892 (n_gt=166)
+Epoch 119: loss=0.3403 (hm=0.1321 wh=1.1451 off=0.0937) [33 batches, 20.0s]
+  val: mean_best_iou=0.5524 precision=0.9921 recall=0.7590 (n_gt=166)
+Epoch 120: loss=0.3422 (hm=0.1292 wh=1.2062 off=0.0923) [33 batches, 19.9s]
+  val: mean_best_iou=0.5026 precision=0.9914 recall=0.6928 (n_gt=166)
+Epoch 121: loss=0.3454 (hm=0.1406 wh=1.1552 off=0.0892) [33 batches, 19.8s]
+  val: mean_best_iou=0.5738 precision=0.9851 recall=0.7952 (n_gt=166)
+Epoch 122: loss=0.3426 (hm=0.1369 wh=1.1554 off=0.0902) [33 batches, 20.3s]
+  val: mean_best_iou=0.4976 precision=0.9829 recall=0.6928 (n_gt=166)
+Epoch 123: loss=0.3289 (hm=0.1254 wh=1.1581 off=0.0877) [33 batches, 20.1s]
+  val: mean_best_iou=0.5595 precision=0.9922 recall=0.7711 (n_gt=166)
+Epoch 124: loss=0.3317 (hm=0.1236 wh=1.1529 off=0.0928) [33 batches, 19.9s]
+  val: mean_best_iou=0.5478 precision=0.9920 recall=0.7470 (n_gt=166)
+Epoch 125: loss=0.3254 (hm=0.1238 wh=1.1329 off=0.0884) [33 batches, 20.1s]
+  val: mean_best_iou=0.5503 precision=0.9921 recall=0.7530 (n_gt=166)
+Epoch 126: loss=0.3417 (hm=0.1357 wh=1.1748 off=0.0886) [33 batches, 20.2s]
+  val: mean_best_iou=0.5666 precision=0.9774 recall=0.7831 (n_gt=166)
+Epoch 127: loss=0.3090 (hm=0.1095 wh=1.1281 off=0.0867) [33 batches, 19.9s]
+  val: mean_best_iou=0.5348 precision=0.9919 recall=0.7410 (n_gt=166)
+Epoch 128: loss=0.3209 (hm=0.1148 wh=1.1532 off=0.0908) [33 batches, 20.2s]
+  val: mean_best_iou=0.5620 precision=0.9923 recall=0.7771 (n_gt=166)
+Epoch 129: loss=0.3274 (hm=0.1229 wh=1.1464 off=0.0899) [33 batches, 20.2s]
+  val: mean_best_iou=0.5829 precision=0.9781 recall=0.8072 (n_gt=166)
+Epoch 130: loss=0.3294 (hm=0.1257 wh=1.1523 off=0.0884) [33 batches, 20.2s]
+  val: mean_best_iou=0.5155 precision=0.9917 recall=0.7169 (n_gt=166)
+Epoch 131: loss=0.3260 (hm=0.1253 wh=1.1489 off=0.0858) [33 batches, 20.2s]
+  val: mean_best_iou=0.5051 precision=0.9915 recall=0.7048 (n_gt=166)
+Epoch 132: loss=0.3222 (hm=0.1207 wh=1.1353 off=0.0879) [33 batches, 20.1s]
+  val: mean_best_iou=0.5761 precision=0.9776 recall=0.7892 (n_gt=166)
+Epoch 133: loss=0.3220 (hm=0.1217 wh=1.1464 off=0.0857) [33 batches, 19.9s]
+  val: mean_best_iou=0.5747 precision=0.9851 recall=0.7952 (n_gt=166)
+Epoch 134: loss=0.3233 (hm=0.1152 wh=1.1729 off=0.0907) [33 batches, 20.3s]
+  val: mean_best_iou=0.5514 precision=0.9922 recall=0.7651 (n_gt=166)
+Epoch 135: loss=0.3221 (hm=0.1227 wh=1.1313 off=0.0863) [33 batches, 20.6s]
+  val: mean_best_iou=0.5792 precision=0.9779 recall=0.8012 (n_gt=166)
+Epoch 136: loss=0.3159 (hm=0.1155 wh=1.1429 off=0.0861) [33 batches, 20.4s]
+  val: mean_best_iou=0.5667 precision=0.9774 recall=0.7831 (n_gt=166)
+Epoch 137: loss=0.3376 (hm=0.1335 wh=1.1509 off=0.0890) [33 batches, 19.9s]
+  val: mean_best_iou=0.5362 precision=0.9920 recall=0.7470 (n_gt=166)
+Epoch 138: loss=0.3054 (hm=0.1091 wh=1.1217 off=0.0841) [33 batches, 19.9s]
+  val: mean_best_iou=0.5745 precision=0.9925 recall=0.7952 (n_gt=166)
+Epoch 139: loss=0.3205 (hm=0.1244 wh=1.1142 off=0.0847) [33 batches, 19.9s]
+  val: mean_best_iou=0.5694 precision=0.9924 recall=0.7892 (n_gt=166)
+Epoch 140: loss=0.3187 (hm=0.1179 wh=1.1583 off=0.0850) [33 batches, 20.4s]
+  val: mean_best_iou=0.5682 precision=0.9850 recall=0.7892 (n_gt=166)
+Epoch 141: loss=0.3332 (hm=0.1342 wh=1.1360 off=0.0855) [33 batches, 20.2s]
+  val: mean_best_iou=0.5651 precision=0.9924 recall=0.7831 (n_gt=166)
+Epoch 142: loss=0.3135 (hm=0.1163 wh=1.1119 off=0.0860) [33 batches, 20.0s]
+  val: mean_best_iou=0.5832 precision=0.9781 recall=0.8072 (n_gt=166)
+Epoch 143: loss=0.3186 (hm=0.1214 wh=1.1113 off=0.0861) [33 batches, 20.0s]
+  val: mean_best_iou=0.5804 precision=0.9635 recall=0.7952 (n_gt=166)
+Epoch 144: loss=0.3145 (hm=0.1160 wh=1.1147 off=0.0871) [33 batches, 20.1s]
+  val: mean_best_iou=0.5729 precision=0.9925 recall=0.7952 (n_gt=166)
+Epoch 145: loss=0.3179 (hm=0.1216 wh=1.1105 off=0.0852) [33 batches, 20.4s]
+  val: mean_best_iou=0.5597 precision=0.9923 recall=0.7771 (n_gt=166)
+Epoch 146: loss=0.3225 (hm=0.1176 wh=1.1663 off=0.0883) [33 batches, 20.2s]
+  val: mean_best_iou=0.5525 precision=0.9922 recall=0.7651 (n_gt=166)
+Epoch 147: loss=0.3261 (hm=0.1224 wh=1.1505 off=0.0887) [33 batches, 19.8s]
+  val: mean_best_iou=0.5776 precision=0.9778 recall=0.7952 (n_gt=166)
+Epoch 148: loss=0.3151 (hm=0.1183 wh=1.1111 off=0.0857) [33 batches, 20.1s]
+  val: mean_best_iou=0.5741 precision=0.9925 recall=0.7952 (n_gt=166)
+Epoch 149: loss=0.3212 (hm=0.1235 wh=1.1213 off=0.0856) [33 batches, 20.2s]
+  val: mean_best_iou=0.5365 precision=0.9920 recall=0.7470 (n_gt=166)
