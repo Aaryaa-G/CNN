@@ -69,6 +69,14 @@ def main():
     parser.add_argument("--width", type=int, default=64)
     parser.add_argument("--depth", type=int, default=6)
     parser.add_argument("--grad-clip", type=float, default=10.0, help="max gradient norm (0 disables)")
+    parser.add_argument("--wh-weight", type=float, default=0.1, help="loss weight on the width/height head")
+    parser.add_argument("--vflip", action="store_true", help="augment: random vertical flip")
+    parser.add_argument("--rotate-deg", type=float, default=0.0,
+                         help="augment: random rotation in [-deg, deg] (0 disables)")
+    parser.add_argument("--gain-jitter", type=float, default=0.0,
+                         help="augment: random multiplicative gain in [1-x, 1+x] (0 disables)")
+    parser.add_argument("--gamma-jitter", type=float, default=0.0,
+                         help="augment: random gamma in [1-x, 1+x] (0 disables)")
     parser.add_argument("--score-thresh", type=float, default=0.3)
     parser.add_argument("--iou-thresh", type=float, default=0.3)
     parser.add_argument("--resume", default=None, help="path to a checkpoint to resume from")
@@ -82,7 +90,9 @@ def main():
     use_amp = args.amp and device.type == "cuda"
     print(f"Device: {device}, AMP: {use_amp}")
 
-    train_ds = EventManifestDataset(args.data_dir, split="train", val_frac=args.val_frac)
+    train_ds = EventManifestDataset(args.data_dir, split="train", val_frac=args.val_frac,
+                                     vflip=args.vflip, rotate_deg=args.rotate_deg,
+                                     gain_jitter=args.gain_jitter, gamma_jitter=args.gamma_jitter)
     val_ds = EventManifestDataset(args.data_dir, split="val", val_frac=args.val_frac, augment=False)
     print(f"Train samples: {len(train_ds)}, val samples: {len(val_ds)}")
 
@@ -123,7 +133,8 @@ def main():
             optimizer.zero_grad(set_to_none=True)
             with torch.autocast(device_type="cuda", enabled=use_amp):
                 pred_hm, pred_wh, pred_off = model(images)
-                loss, parts = centernet_loss(pred_hm, pred_wh, pred_off, gt_hm, gt_wh, gt_off, mask)
+                loss, parts = centernet_loss(pred_hm, pred_wh, pred_off, gt_hm, gt_wh, gt_off, mask,
+                                              wh_weight=args.wh_weight)
 
             scaler.scale(loss).backward()
             if args.grad_clip > 0:
